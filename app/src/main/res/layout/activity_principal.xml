@@ -1,9 +1,79 @@
 <?xml version="1.0" encoding="utf-8"?>
-<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
-    xmlns:tools="http://schemas.android.com/tools"
-    android:layout_width="match_parent"
+<LinearLayout android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".Principal">
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:padding="16dp"
+    android:gravity="center">
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@mipmap/ic_launcher"
+        android:layout_marginBottom="24dp"/>
+    <com.beardedhen.androidbootstrap.BootstrapButton
+        android:layout_width="wrap_content"
+        android:id="@+id/btnVerRutina"
+        android:layout_height="wrap_content"
+        android:text="Ver mi Rutina   "
+        android:drawableStart="@drawable/icon_rutina"
+        android:drawablePadding="12sp"
+        app:buttonMode="regular"
+        app:roundedCorners="true"
+        app:bootstrapSize="lg"
+        android:layout_marginVertical="8dp"
+        />
 
-</android.support.constraint.ConstraintLayout>
+    <com.beardedhen.androidbootstrap.BootstrapButton
+        android:layout_width="wrap_content"
+        android:id="@+id/btnVerDieta"
+        android:layout_height="wrap_content"
+        android:text="Ver  Comidas   "
+        android:drawableStart="@drawable/icon_dieta"
+        android:drawablePadding="12sp"
+        app:buttonMode="regular"
+        app:roundedCorners="true"
+        app:bootstrapSize="lg"
+        android:layout_marginVertical="8dp"
+        />
+    <com.beardedhen.androidbootstrap.BootstrapButton
+        android:layout_width="wrap_content"
+        android:id="@+id/btnVerConsejos"
+        android:layout_height="wrap_content"
+        android:text="Tips Generales"
+        android:drawableStart="@drawable/icon_tips"
+        android:drawablePadding="12sp"
+        app:buttonMode="regular"
+        app:roundedCorners="true"
+        app:bootstrapSize="lg"
+        android:layout_marginVertical="8dp"
+        />
+
+    <com.beardedhen.androidbootstrap.BootstrapButton
+        android:layout_width="wrap_content"
+        android:id="@+id/btnVerPromociones"
+        android:layout_height="wrap_content"
+        android:text="Promociones    "
+        android:drawableStart="@drawable/icon_promos"
+        android:drawablePadding="12sp"
+        app:buttonMode="regular"
+        app:roundedCorners="true"
+        app:bootstrapSize="lg"
+        android:layout_marginVertical="8dp"
+        />
+    <com.beardedhen.androidbootstrap.BootstrapButton
+        android:layout_width="wrap_content"
+        android:id="@+id/btnContacto"
+        android:layout_height="wrap_content"
+        android:text="Contacto           "
+        android:drawableStart="@drawable/icon_contacto"
+        android:drawablePadding="12sp"
+        app:buttonMode="regular"
+        app:roundedCorners="true"
+        app:bootstrapSize="lg"
+        android:layout_marginVertical="8dp"
+        />
+
+
+
+</LinearLayout>

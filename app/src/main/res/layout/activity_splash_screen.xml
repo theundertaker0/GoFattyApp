@@ -8,6 +8,7 @@
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:contentDescription="@string/alt_Logo"
+        android:src="@drawable/logogofatty"
         android:adjustViewBounds="true"
         android:scaleType="fitXY"
         android:layout_gravity="center_vertical"/>
