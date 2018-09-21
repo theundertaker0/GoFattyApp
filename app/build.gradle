@@ -39,4 +39,5 @@ dependencies {
     implementation 'com.squareup.moshi:moshi:1.6.0'
     implementation 'com.github.kittinunf.forge:forge:0.3.0'
     implementation 'com.beardedhen:androidbootstrap:2.3.2'
+    implementation 'com.github.clans:fab:1.6.2'
 }

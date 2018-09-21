@@ -3,6 +3,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     android:gravity="center_horizontal"
     android:orientation="vertical"
     android:paddingBottom="@dimen/activity_vertical_margin"
@@ -38,8 +39,10 @@
                 android:layout_marginVertical="24dp"
                 android:layout_gravity="center"/>
 
-            <AutoCompleteTextView
+            <com.beardedhen.androidbootstrap.BootstrapEditText
                 android:id="@+id/email"
+                app:bootstrapSize="lg"
+                app:roundedCorners="true"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:hint="@string/prompt_email"
@@ -47,8 +50,11 @@
                 android:maxLines="1"
                 android:singleLine="true" />
 
-            <EditText
+            <com.beardedhen.androidbootstrap.BootstrapEditText
                 android:id="@+id/password"
+                app:bootstrapSize="lg"
+                android:layout_marginVertical="8dp"
+                app:roundedCorners="true"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:hint="@string/prompt_password"
@@ -59,12 +65,16 @@
                 android:maxLines="1"
                 android:singleLine="true" />
 
-            <Button
+            <com.beardedhen.androidbootstrap.BootstrapButton
                 android:id="@+id/email_sign_in_button"
-                style="?android:textAppearanceSmall"
-                android:layout_width="match_parent"
+                app:bootstrapSize="lg"
+                app:roundedCorners="true"
+                android:layout_width="wrap_content"
+                android:layout_gravity="center"
+                android:drawablePadding="8dp"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="16dp"
+                android:drawableStart="@drawable/icon_login"
                 android:text="@string/action_sign_in"
                 android:textStyle="bold" />
 
