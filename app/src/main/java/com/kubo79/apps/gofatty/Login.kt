@@ -212,20 +212,20 @@ class Login : Activity(), LoaderCallbacks<Cursor> {
             cursor.moveToNext()
         }
 
-        addEmailsToAutoComplete(emails)
+//        addEmailsToAutoComplete(emails)
     }
 
     override fun onLoaderReset(cursorLoader: Loader<Cursor>) {
 
     }
 
-    private fun addEmailsToAutoComplete(emailAddressCollection: List<String>) {
+  /*  private fun addEmailsToAutoComplete(emailAddressCollection: List<String>) {
         //Create adapter to tell the AutoCompleteTextView what to show in its dropdown list.
         val adapter = ArrayAdapter(this@Login,
                 android.R.layout.simple_dropdown_item_1line, emailAddressCollection)
 
         email.setAdapter(adapter)
-    }
+    }*/
 
     object ProfileQuery {
         val PROJECTION = arrayOf(

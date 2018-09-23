@@ -29,7 +29,10 @@
         <activity
             android:name=".Login"
             android:label="@string/title_activity_login" />
-        <activity android:name=".Contacto"></activity>
+        <activity android:name=".VerContacto" />
+        <activity android:name=".VerRutina" />
+        <activity android:name=".VerEjercicios" />
+        <activity android:name=".EjercicioDetalle"></activity>
     </application>
 
 </manifest>

@@ -8,7 +8,7 @@ import android.os.Bundle
 import kotlinx.android.synthetic.main.activity_contacto.*
 import org.jetbrains.anko.toast
 
-class Contacto : AppCompatActivity() {
+class VerContacto : AppCompatActivity() {
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -30,7 +30,7 @@ class Contacto : AppCompatActivity() {
             emailIntent.data= Uri.parse("mailto:")
             emailIntent.type="text/plain"
             emailIntent.putExtra(Intent.EXTRA_EMAIL,TO)
-            emailIntent.putExtra(Intent.EXTRA_SUBJECT,"Duda sobre Itinerario")
+            emailIntent.putExtra(Intent.EXTRA_SUBJECT,"Duda sobre mi rutina")
             try{
                 startActivity(Intent.createChooser(emailIntent,"Enviar email..."))
             }catch(ex: ActivityNotFoundException){

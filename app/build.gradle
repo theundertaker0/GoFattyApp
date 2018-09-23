@@ -40,4 +40,7 @@ dependencies {
     implementation 'com.github.kittinunf.forge:forge:0.3.0'
     implementation 'com.beardedhen:androidbootstrap:2.3.2'
     implementation 'com.github.clans:fab:1.6.2'
+    implementation 'com.squareup.retrofit2:retrofit:2.2.0'
+    implementation 'com.squareup.retrofit2:converter-gson:2.2.0'
+    implementation 'com.squareup.picasso:picasso:2.71828'
 }
