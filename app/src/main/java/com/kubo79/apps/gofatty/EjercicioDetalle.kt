@@ -13,8 +13,8 @@ class EjercicioDetalle : AppCompatActivity() {
         val extras= this.intent.extras
         txtNombreEjercicio.setText(extras.get("name").toString())
         wvDescripcionEjercicio.loadDataWithBaseURL(null,"<body>${extras.get("description").toString()}</body>",null,null,null)
-        if(extras.get("image")!=""){
+       /* if(extras.get("image")!=""){
             Picasso.get().load("").into(imgEjercicio)
-        }
+        }*/
     }
 }
